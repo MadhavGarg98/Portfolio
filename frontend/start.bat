@@ -1,0 +1,9 @@
+@echo off
+echo Starting Madhav Garg Portfolio...
+echo.
+echo Installing dependencies...
+npm install
+echo.
+echo Starting development server...
+npm run dev
+pause 
