@@ -35,18 +35,20 @@ export default function App() {
       
       <Navigation scrollToSection={scrollToSection} />
       
-      <Hero scrollToSection={scrollToSection} madhavGarg={madhavGarg} />
-      
-      <About skills={skills} />
-      
-      <TechStack />
-      
-      <Projects />
-      
-      <Contact 
-        setShowNotification={setShowNotification}
-        setNotificationData={setNotificationData}
-      />
+      <main className="relative z-10">
+        <Hero scrollToSection={scrollToSection} madhavGarg={madhavGarg} />
+        
+        <About skills={skills} />
+        
+        <TechStack />
+        
+        <Projects />
+        
+        <Contact 
+          setShowNotification={setShowNotification}
+          setNotificationData={setNotificationData}
+        />
+      </main>
       
       <Footer />
       

@@ -109,23 +109,23 @@ export default function Contact({ setShowNotification, setNotificationData }) {
   }
 
   return (
-    <section id="contact" className="py-12 sm:py-16 lg:py-20 relative">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12 sm:mb-16 animate-fade-in-up">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
+    <section id="contact" className="py-8 sm:py-12 md:py-16 lg:py-20 relative px-4 sm:px-6 lg:px-8">
+      <div className="max-w-4xl mx-auto">
+        <div className="text-center mb-8 sm:mb-12 md:mb-16 animate-fade-in-up">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-3 sm:mb-4">
             Let's{" "}
             <span className="bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
               Connect
             </span>
           </h2>
-          <p className="text-gray-400 text-base sm:text-lg max-w-2xl mx-auto">
+          <p className="text-gray-400 text-sm sm:text-base md:text-lg max-w-2xl mx-auto leading-relaxed">
             Whether you're looking to build a new website, improve your existing platform, or bring a unique project
             to life, I'm here to help
           </p>
         </div>
 
         <Card className="bg-gray-900/50 border-gray-700/50 backdrop-blur-sm hover:bg-gray-900/70 transition-all duration-500 animate-slide-in-up">
-          <CardContent className="p-6 sm:p-8">
+          <CardContent className="p-4 sm:p-6 md:p-8">
             <form className="space-y-4 sm:space-y-6" onSubmit={handleFormSubmit}>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
                 <div className="animate-fade-in-up" style={{ animationDelay: "0.1s" }}>
@@ -177,7 +177,7 @@ export default function Contact({ setShowNotification, setNotificationData }) {
 
               <Button
                 type="submit"
-                className="w-full bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white py-3 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-purple-500/25 group animate-fade-in-up disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none text-sm sm:text-base"
+                className="w-full bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white py-2 sm:py-3 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-purple-500/25 group animate-fade-in-up disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none text-sm sm:text-base"
                 style={{ animationDelay: "0.4s" }}
                 disabled={isSubmitting}
               >
@@ -201,14 +201,14 @@ export default function Contact({ setShowNotification, setNotificationData }) {
               </div>
             </form>
 
-            <div className="mt-6 sm:mt-8 pt-6 sm:pt-8 border-t border-gray-700/50">
+            <div className="mt-6 sm:mt-8 pt-4 sm:pt-6 md:pt-8 border-t border-gray-700/50">
               <div className="flex justify-center space-x-4 sm:space-x-6 animate-fade-in-up" style={{ animationDelay: "0.5s" }}>
                 <a
                   href="mailto:madhavgarg3300@gmail.com"
                   className="flex items-center text-gray-400 hover:text-white transition-all duration-300 hover:scale-105 text-xs sm:text-sm"
                 >
-                  <Mail className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
-                  <span className="hidden sm:inline">madhavgarg3300@gmail.com</span>
+                  <Mail className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 mr-2 flex-shrink-0" />
+                  <span className="hidden sm:inline truncate">madhavgarg3300@gmail.com</span>
                   <span className="sm:hidden">Email</span>
                 </a>
               </div>
@@ -221,17 +221,17 @@ export default function Contact({ setShowNotification, setNotificationData }) {
                   href="https://github.com/MadhavGarg98"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-400 hover:text-white transition-all duration-300 transform hover:scale-125"
+                  className="text-gray-400 hover:text-white transition-all duration-300 transform hover:scale-125 p-2"
                 >
-                  <Github className="w-5 h-5 sm:w-6 sm:h-6" />
+                  <Github className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" />
                 </a>
                 <a
                   href="https://www.linkedin.com/in/madhav-garg-b447b5324"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-400 hover:text-white transition-all duration-300 transform hover:scale-125"
+                  className="text-gray-400 hover:text-white transition-all duration-300 transform hover:scale-125 p-2"
                 >
-                  <Linkedin className="w-5 h-5 sm:w-6 sm:h-6" />
+                  <Linkedin className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" />
                 </a>
               </div>
             </div>

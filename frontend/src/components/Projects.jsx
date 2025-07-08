@@ -39,50 +39,50 @@ export default function Projects() {
   ]
 
   return (
-    <section id="projects" className="py-12 sm:py-16 lg:py-20 relative">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12 sm:mb-16 animate-fade-in-up">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
+    <section id="projects" className="py-8 sm:py-12 md:py-16 lg:py-20 relative px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto">
+        <div className="text-center mb-8 sm:mb-12 md:mb-16 animate-fade-in-up">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-3 sm:mb-4">
             Featured{" "}
             <span className="bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
               Projects
             </span>
           </h2>
-          <p className="text-gray-400 text-base sm:text-lg max-w-2xl mx-auto">
+          <p className="text-gray-400 text-sm sm:text-base md:text-lg max-w-2xl mx-auto leading-relaxed">
             A showcase of my recent work and professional projects
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
           {projects.map((project, index) => {
             const IconComponent = project.icon
             return (
               <Card
                 key={project.title}
-                className="bg-gray-900/50 border-gray-700/50 backdrop-blur-sm hover:bg-gray-900/70 transition-all duration-500 transform hover:scale-105 group cursor-pointer animate-fade-in-up"
+                className="bg-gray-900/50 border-gray-700/50 backdrop-blur-sm hover:bg-gray-900/70 transition-all duration-500 transform hover:scale-105 group cursor-pointer animate-fade-in-up h-full flex flex-col"
                 style={{ animationDelay: `${index * 0.2}s` }}
               >
-                <CardContent className="p-6 sm:p-8">
-                  <div className="mb-6 sm:mb-8 flex justify-center perspective-1000">
+                <CardContent className="p-4 sm:p-6 md:p-8 flex flex-col h-full">
+                  <div className="mb-4 sm:mb-6 md:mb-8 flex justify-center perspective-1000">
                     <div
-                      className={`w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 rounded-2xl sm:rounded-3xl bg-gradient-to-r ${project.color} flex items-center justify-center animate-rotate-3d group-hover:animate-rotate-3d-fast transition-all duration-700 shadow-2xl group-hover:shadow-3xl relative overflow-hidden`}
+                      className={`w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 rounded-xl sm:rounded-2xl md:rounded-3xl bg-gradient-to-r ${project.color} flex items-center justify-center animate-rotate-3d group-hover:animate-rotate-3d-fast transition-all duration-700 shadow-2xl group-hover:shadow-3xl relative overflow-hidden`}
                       style={{
                         transformStyle: "preserve-3d",
                       }}
                     >
-                      <div className="absolute inset-0 bg-gradient-to-br from-white/20 to-transparent rounded-2xl sm:rounded-3xl"></div>
+                      <div className="absolute inset-0 bg-gradient-to-br from-white/20 to-transparent rounded-xl sm:rounded-2xl md:rounded-3xl"></div>
                       <IconComponent />
                     </div>
                   </div>
 
-                  <div className="mb-4 sm:mb-6">
-                    <h3 className="text-xl sm:text-2xl font-bold mb-2 sm:mb-3 group-hover:text-purple-400 transition-colors text-center">
+                  <div className="mb-4 sm:mb-6 flex-grow">
+                    <h3 className="text-lg sm:text-xl md:text-2xl font-bold mb-2 sm:mb-3 group-hover:text-purple-400 transition-colors text-center">
                       {project.title}
                     </h3>
-                    <p className="text-gray-400 text-xs sm:text-sm leading-relaxed text-center line-clamp-3">{project.description}</p>
+                    <p className="text-gray-400 text-xs sm:text-sm leading-relaxed text-center line-clamp-3 mb-4">{project.description}</p>
                   </div>
 
-                  <div className="flex flex-wrap gap-1.5 sm:gap-2 mb-4 sm:mb-6 justify-center">
+                  <div className="flex flex-wrap gap-1 sm:gap-1.5 md:gap-2 mb-4 sm:mb-6 justify-center">
                     {project.tech.map((tech) => (
                       <Badge
                         key={tech}
@@ -94,7 +94,7 @@ export default function Projects() {
                     ))}
                   </div>
 
-                  <div className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-4">
+                  <div className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-3 md:space-x-4 mt-auto">
                     <Button
                       size="sm"
                       variant="outline"

@@ -1,5 +1,5 @@
 export const CoffeeIcon = () => (
-  <div className="relative w-12 h-12 mx-auto">
+  <div className="relative w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 mx-auto">
     <img
       src="https://res.cloudinary.com/dfgzjz1by/image/upload/v1751802091/Main_Logo_rbpghz.png"
       alt="Coffee Chat Logo"
@@ -12,7 +12,7 @@ export const CoffeeIcon = () => (
 )
 
 export const GymIcon = () => (
-  <div className="relative w-12 h-12 mx-auto">
+  <div className="relative w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 mx-auto">
     <img
       src="https://res.cloudinary.com/dfgzjz1by/image/upload/v1751696297/Screenshot_304_od9iw1.png"
       alt="Gym Management System"
@@ -25,7 +25,7 @@ export const GymIcon = () => (
 )
 
 export const PortfolioIcon = () => (
-  <div className="relative w-12 h-12 mx-auto">
+  <div className="relative w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 mx-auto">
     <div className="code-editor">
       <div className="editor-header">
         <div className="editor-dot red"></div>
