@@ -31,7 +31,7 @@ export default function Projects() {
       description:
         "A cutting-edge portfolio website showcasing modern web development practices. Features advanced animations, responsive design, performance optimization, and accessibility compliance following industry standards.",
       tech: ["React", "JavaScript", "Tailwind CSS", "Vite"],
-      github: "https://github.com/MadhavGarg98",
+      github: "https://github.com/MadhavGarg98/Portfolio",
       live: "#",
       icon: PortfolioIcon,
       color: "from-purple-500 via-blue-500 to-cyan-500",
@@ -39,21 +39,21 @@ export default function Projects() {
   ]
 
   return (
-    <section id="projects" className="py-20 relative">
+    <section id="projects" className="py-12 sm:py-16 lg:py-20 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16 animate-fade-in-up">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+        <div className="text-center mb-12 sm:mb-16 animate-fade-in-up">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
             Featured{" "}
             <span className="bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
               Projects
             </span>
           </h2>
-          <p className="text-gray-400 text-lg max-w-2xl mx-auto">
+          <p className="text-gray-400 text-base sm:text-lg max-w-2xl mx-auto">
             A showcase of my recent work and professional projects
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {projects.map((project, index) => {
             const IconComponent = project.icon
             return (
@@ -62,54 +62,54 @@ export default function Projects() {
                 className="bg-gray-900/50 border-gray-700/50 backdrop-blur-sm hover:bg-gray-900/70 transition-all duration-500 transform hover:scale-105 group cursor-pointer animate-fade-in-up"
                 style={{ animationDelay: `${index * 0.2}s` }}
               >
-                <CardContent className="p-8">
-                  <div className="mb-8 flex justify-center perspective-1000">
+                <CardContent className="p-6 sm:p-8">
+                  <div className="mb-6 sm:mb-8 flex justify-center perspective-1000">
                     <div
-                      className={`w-24 h-24 rounded-3xl bg-gradient-to-r ${project.color} flex items-center justify-center animate-rotate-3d group-hover:animate-rotate-3d-fast transition-all duration-700 shadow-2xl group-hover:shadow-3xl relative overflow-hidden`}
+                      className={`w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 rounded-2xl sm:rounded-3xl bg-gradient-to-r ${project.color} flex items-center justify-center animate-rotate-3d group-hover:animate-rotate-3d-fast transition-all duration-700 shadow-2xl group-hover:shadow-3xl relative overflow-hidden`}
                       style={{
                         transformStyle: "preserve-3d",
                       }}
                     >
-                      <div className="absolute inset-0 bg-gradient-to-br from-white/20 to-transparent rounded-3xl"></div>
+                      <div className="absolute inset-0 bg-gradient-to-br from-white/20 to-transparent rounded-2xl sm:rounded-3xl"></div>
                       <IconComponent />
                     </div>
                   </div>
 
-                  <div className="mb-6">
-                    <h3 className="text-2xl font-bold mb-3 group-hover:text-purple-400 transition-colors text-center">
+                  <div className="mb-4 sm:mb-6">
+                    <h3 className="text-xl sm:text-2xl font-bold mb-2 sm:mb-3 group-hover:text-purple-400 transition-colors text-center">
                       {project.title}
                     </h3>
-                    <p className="text-gray-400 text-sm leading-relaxed text-center">{project.description}</p>
+                    <p className="text-gray-400 text-xs sm:text-sm leading-relaxed text-center line-clamp-3">{project.description}</p>
                   </div>
 
-                  <div className="flex flex-wrap gap-2 mb-6 justify-center">
+                  <div className="flex flex-wrap gap-1.5 sm:gap-2 mb-4 sm:mb-6 justify-center">
                     {project.tech.map((tech) => (
                       <Badge
                         key={tech}
                         variant="secondary"
-                        className="bg-gray-800/50 text-gray-300 hover:bg-purple-600 hover:text-white transition-all duration-300 backdrop-blur-sm text-xs px-3 py-1"
+                        className="bg-gray-800/50 text-gray-300 hover:bg-purple-600 hover:text-white transition-all duration-300 backdrop-blur-sm text-xs px-2 sm:px-3 py-1"
                       >
                         {tech}
                       </Badge>
                     ))}
                   </div>
 
-                  <div className="flex space-x-4">
+                  <div className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-4">
                     <Button
                       size="sm"
                       variant="outline"
-                      className="border-gray-600 text-gray-300 hover:bg-gray-800/50 hover:border-purple-500 flex-1 group/btn backdrop-blur-sm bg-transparent"
+                      className="border-gray-600 text-gray-300 hover:bg-gray-800/50 hover:border-purple-500 flex-1 group/btn backdrop-blur-sm bg-transparent text-xs sm:text-sm"
                       onClick={(e) => {
                         e.stopPropagation()
                         window.open(project.github, "_blank")
                       }}
                     >
-                      <Github className="w-4 h-4 mr-2 group-hover/btn:rotate-12 transition-transform" />
+                      <Github className="w-3 h-3 sm:w-4 sm:h-4 mr-1 sm:mr-2 group-hover/btn:rotate-12 transition-transform" />
                       Code
                     </Button>
                     <Button
                       size="sm"
-                      className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 flex-1 group/btn disabled:opacity-50 disabled:cursor-not-allowed"
+                      className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 flex-1 group/btn disabled:opacity-50 disabled:cursor-not-allowed text-xs sm:text-sm"
                       onClick={(e) => {
                         e.stopPropagation()
                         if (project.live && project.live !== "#") {
@@ -118,7 +118,7 @@ export default function Projects() {
                       }}
                       disabled={!project.live || project.live === "#"}
                     >
-                      <ExternalLink className="w-4 h-4 mr-2 group-hover/btn:animate-bounce" />
+                      <ExternalLink className="w-3 h-3 sm:w-4 sm:h-4 mr-1 sm:mr-2 group-hover/btn:animate-bounce" />
                       {project.live && project.live !== "#" ? "Live" : "Coming Soon"}
                     </Button>
                   </div>

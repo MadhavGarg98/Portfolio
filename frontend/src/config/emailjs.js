@@ -1,9 +1,4 @@
-// EmailJS Configuration
-// To set up EmailJS:
-// 1. Go to https://www.emailjs.com/ and create a free account
-// 2. Add an email service (Gmail, Outlook, etc.)
-// 3. Create an email template
-// 4. Get your credentials and replace the placeholders below
+
 
 export const EMAILJS_CONFIG = {
   SERVICE_ID: 'service_2lo52b3', // Your EmailJS Service ID
