@@ -85,7 +85,7 @@ export default function Hero({ scrollToSection, madhavGarg }) {
               View Work
             </Button>
             <Button
-              onClick={() => window.open("/src/assests/Madhav Garg.docx.pdf", "_blank")}
+              onClick={() => window.open("/images/Madhav Garg.docx.pdf", "_blank")}
               variant="outline"
               className="border-gray-600 text-gray-300 hover:bg-gray-800/50 hover:border-green-500 px-4 sm:px-6 md:px-8 py-2 sm:py-3 md:py-4 rounded-full transition-all duration-300 transform hover:scale-105 group backdrop-blur-sm text-xs sm:text-sm md:text-base w-full sm:w-auto"
             >
@@ -236,7 +236,7 @@ export default function Hero({ scrollToSection, madhavGarg }) {
                   { name: "JS", color: "from-yellow-400 to-yellow-600" },
                   { name: "React", color: "from-blue-400 to-blue-600" },
                   { name: "Node", color: "from-green-400 to-green-600" },
-                  { name: "DB", color: "from-green-500 to-green-700" },
+                  { name: "Db", color: "from-green-500 to-green-700" },
                 ].map((tech, i) => (
                   <div
                     key={tech.name}
