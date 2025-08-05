@@ -1,18 +1,18 @@
 # 🧑‍💻 Personal Portfolio Website
 
-A sleek and responsive portfolio website built with **React.js** to showcase my **projects**, **skills**, **resume**, and future **achievements**. Designed with performance, accessibility, and animations in mind — it delivers a smooth experience across all screen sizes.
+A sleek, modern, and fully responsive **React.js** portfolio website to showcase my skills, projects, achievements, and resume. Designed with performance in mind, it features smooth animations, clean code, and a seamless user experience across all devices.
 
 ---
 
 ## 🚀 Features
 
-- ⚛️ **Built with React.js**
-- 📱 **Fully responsive & mobile-friendly**
-- 🧹 **Clean, modular, and optimized codebase**
-- 🎮 **Smooth scroll and subtle animations**
-- 📄 **Downloadable Resume section**
-- 💼 **Dedicated sections for Skills, Projects, and Contact**
-- 🏆 **Space reserved for future achievements and milestones**
+- ⚛️ **Built with React.js** – Component-based structure for better scalability
+- 📱 **Responsive Design** – Optimized for all screen sizes
+- 🧹 **Clean & Modular Codebase** – Easy to customize and maintain
+- 🎬 **Smooth Scrolling & Animations** – Delightful transitions using AOS/Framer Motion
+- 📄 **Downloadable Resume** – Showcase your CV directly from the website
+- 📌 **Project, Skills & Contact Sections** – Well-organized information architecture
+- 🏆 **Achievements Section** – Dedicated space for future milestones
 
 ---
 
@@ -23,12 +23,12 @@ portfolio/
 ├── public/
 │   └── index.html
 ├── src/
-│   ├── assets/         # Images, icons, etc.
+│   ├── assets/         # Images, icons, logos
 │   ├── components/     # Reusable UI components
-│   ├── pages/          # Home, Projects, About, etc.
-│   ├── App.js
-│   └── index.js
-├── package.json
+│   ├── pages/          # Pages: Home, Projects, About, etc.
+│   ├── App.js          # Main app component
+│   └── index.js        # Entry point
+├── package.json        # Project metadata and dependencies
 └── README.md
 ```
 
@@ -37,15 +37,15 @@ portfolio/
 ## 🛠️ Tech Stack
 
 - **React.js**
-- **JavaScript (ES6+)**
 - **HTML5 & CSS3**
-- **Framer Motion / AOS** *(for animations)*
+- **JavaScript (ES6+)**
+- **Framer Motion / AOS** – For animations
 
 ---
 
 ## 📦 Installation
 
-To run this project locally:
+To set up the project locally:
 
 ```bash
 git clone https://github.com/your-username/portfolio.git
@@ -58,11 +58,14 @@ npm start
 
 ## 🌐 Live Demo
 
-🔗 [View Live Demo](https://madhavportfolioweb.netlify.app/)
+[🔗 View Live Demo](https://madhavportfolioweb.netlify.app/)
 
 ---
 
 ## 📝 License
 
-This project is licensed under the **MIT License**.  
-Feel free to **use**, **customize**, and **enhance** it for your personal use.
+This project is licensed under the **MIT License** — you're free to use, modify, and enhance it for your personal or professional portfolio.
+
+---
+
+> 💡 _Built with passion by Madhav Garg_
